@@ -14,7 +14,9 @@ Filter rules can be specified in URL units or parameter units.
   
 ## using
   - add jar or source
+  
   - add java config and extend WebSecurityConfigurerAdapter
+  
   - add filter rule
 
 ## example
