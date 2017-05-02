@@ -14,10 +14,9 @@ Filter rules can be specified in URL units or parameter units.
   
 ## using
   - add jar or source
-  
   - add java config and extend WebSecurityConfigurerAdapter
-  
-  - add filter rule
+  - add filter rule
+
 
 ## example
 
@@ -56,11 +55,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 #### URL Filter
 
 http://localhost:8080/admin/auth?cid=9a9b!8c&role=hh$g6*65!2
--> cid: 9a9b8c, role: hhg6652
+
+result: cid: 9a9b8c, role: hhg6652
 
 #### Parameter Filter
 
 http://localhost:8080/member/a/b/c?name=abc123-..!@#;llazcv-
--> name: abc123
+
+result: name: abc123
 
 
